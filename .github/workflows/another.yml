@@ -1,0 +1,14 @@
+name: First Workflow
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - 'dev-yossi'
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "First Workflow - Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
